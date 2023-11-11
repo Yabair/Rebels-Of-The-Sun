@@ -1,0 +1,29 @@
+import random
+
+def animal_adventure_game():
+print("Welcome to the Animal Adventure Game!")
+print("Guess the animal based on the provided clues and learn interesting facts about them.")
+
+animals = {
+"I am the largest land animal. Who am I?": "Elephant",
+"I can rotate my ears 180 degrees. What am I?": "Owl",
+"I am a primate and share 98.3% of my DNA with humans. What am I?": "Chimpanzee",
+"I have black and white stripes and am known for being a horse's distant cousin. What am I?": "Zebra"
+# 
+}
+
+score = 0
+animal_clues = list(animals.keys())
+random.shuffle(animal_clues) # 
+for clue in animal_clues:
+print(clue)
+user_answer = input("Your guess: ").capitalize()
+if user_answer == animals[clue]:
+print("Correct! You guessed the animal right.")
+score += 1
+else:
+print(f"Incorrect. The correct answer is '{animals[clue]}'.")
+
+print("The Animal Adventure Game is over! Your final score is:", score)
+
+animal_adventure_game()

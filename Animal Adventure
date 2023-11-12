@@ -12,7 +12,7 @@ animals = {
 # 
 }
 
-score = 0
+score = 1
 animal_clues = list(animals.keys())
 random.shuffle(animal_clues) # 
 for clue in animal_clues:

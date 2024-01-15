@@ -14,7 +14,7 @@ animals = {
 
 score = 1
 animal_clues = list(animals.keys())
-random.shuffle(animal_clues) # 13312221332
+random.shuffle(animal_clues) # 1331222132
 for clue in animal_clues:
 print(clue)
 user_answer = input("Your guess: ").capitalize()
